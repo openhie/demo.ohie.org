@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style-left.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+<title>OHIE Demo Navbar</title>
+
+<script>
+$(document).ready(function(){
+	$('a').click(function(){
+		$('a.selected').removeClass('selected');
+		$(this).addClass('selected');
+		var site = $(this).attr('site');
+		$('.creds').slideUp();
+		$('#' + site).slideDown();
+	});
+});
+</script>
+
+</head>
+<body>
+
+<div id="header">
+	<img src="img/openhie-lightbg.png" width="95%"></img>
+</div>
+
+<h3>OpenHIE Demo</h3>
+<a class="selected" href="main.html" target="main">About the Demo</a>
+
+<h4>Components</h4>
+<div class="description">
+	Click on a component to load it on the right.  If needed, the username and 
+	password will be provided for the component.
+</div>
+
+<a site="poc" href="http://poc.sandbox.ohie.org:8080/openmrs/" target="main">Point of Care</a>
+<div id="poc" class="hidden creds">
+	<h5>Login Credentials</h5>
+	<dl>
+		<dt>user:</dt>
+		<dd>admin</dd>
+		<dt>password:</dt>
+		<dd>test</dd>
+	</dl>
+</div>
+
+<a site="iol" href="http://iol.sandbox.ohie.org" target="main">Interoperability Layer</a>
+<div id="iol" class="hidden creds">
+	<h5>Login Credentials</h5>
+	<dl>
+		<dt>user:</dt>
+		<dd>admin</dd>
+		<dt>password:</dt>
+		<dd>rhea-password</dd>
+	</dl>
+</div>
+
+<a site="cr" href="http://cr.sandbox.ohie.org:8080/openempi-admin/" target="main">Client Registry</a>
+<div id="cr" class="hidden creds">
+	<h5>Login Credentials</h5>
+	<dl>
+		<dt>user:</dt>
+		<dd>admin</dd>
+		<dt>password:</dt>
+		<dd>admin</dd>
+	</dl>
+</div>
+
+<a href="http://pr.sandbox.ohie.org" target="main">Provider Registry</a>
+<a href="http://fr.sandbox.ohie.org" target="main">Facility Registry</a>
+<a href="http://ts.sandbox.ohie.org" target="main">Terminology Service</a>
+
+<a site="shr" href="http://shr.sandbox.ohie.org:8080/openmrs/" target="main">Shared Health Record</a>
+<div id="shr" class="hidden creds">
+	<h5>Login Credentials</h5>
+	<dl>
+		<dt>user:</dt>
+		<dd>admin</dd>
+		<dt>password:</dt>
+		<dd>test</dd>
+	</dl>
+</div>
+
+</body>
+</html>

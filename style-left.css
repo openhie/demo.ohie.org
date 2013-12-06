@@ -1,0 +1,78 @@
+body {
+	border-right: 5px solid #ccc;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+a, a:visited, a:link {
+	display: block;
+	background: #ddd;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-shadow: 3px 3px 2px #888;
+	width: 195px;
+	padding: 0.5em 10px;
+	text-decoration: none;
+	color: black;
+	margin-bottom: 0.75em;
+}
+
+a:hover, a:active {
+	background: #98714c;
+	color: white;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+a.selected {
+	background: #cb8544;
+	color: white;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.hidden {
+	display: none;
+}
+
+h4 {
+	margin-bottom: 0.5em;
+}
+
+div.description {
+	font-size: 0.85em;
+	font-style: italic;
+	margin-bottom: 1.5em;
+}
+
+div.creds {
+	border: 1px solid black;
+	width: 215px;
+	margin: 0.75em 0;
+}
+
+div.creds h5 {
+	margin: 0;
+	background: #2b727c;
+	border-bottom: 1px solid black;
+	color: white;
+	font-weight: normal;
+	padding: 8px 10px;
+}
+
+div.creds dl {
+	margin: 0;
+	padding: 8px 10px;
+}
+
+div.creds dt {
+	float: left;
+	font-weight: bold;
+	margin-right: 0.25em;
+}
