@@ -24,3 +24,11 @@ blockquote.code {
         border: 1px dashed black;
 	font-family: courier,monospace;
 }
+
+blockquote.disclaimer {
+        background: #eee;
+        padding: 1em;
+        padding-top: 0em;
+        #margin: 0 1em;
+        border: 2px solid red;
+}
