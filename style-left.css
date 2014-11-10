@@ -20,7 +20,7 @@ a, a:visited, a:link {
 }
 
 a:hover, a:active {
-	background: #98714c;
+	background: #0045cc;
 	color: white;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -29,7 +29,7 @@ a:hover, a:active {
 }
 
 a.selected {
-	background: #cb8544;
+	background: #1A7493;
 	color: white;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
